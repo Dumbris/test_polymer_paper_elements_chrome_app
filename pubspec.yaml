@@ -1,0 +1,14 @@
+name: test_polymer_paper_elements_chrome_app
+description: A sample Chrome packaged application
+dependencies:
+  chrome: any
+  polymer: '>=0.11.1-dev <0.12.0'
+  paper_elements: any
+dependency_overrides:  
+  web_components:
+    path: web_components  
+transformers:
+- polymer:
+    entry_points: web/test_polymer_paper_elements_chrome_app.html
+    csp: 'true'
+- chrome    

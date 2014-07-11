@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test polymer paper elements chrome app</title>
+    <script src="packages/web_components/platform.concat.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    <link rel="import" href="packages/paper_elements/paper_button.html">
+    <link rel="stylesheet" href="test_polymer_paper_elements_chrome_app.css">
+  </head>
+  <body>
+    <h1>Test polymer paper elements chrome app</h1>
+
+    <p>Hello world from Dart!</p>
+	<paper-button  label="Test"></paper-button>
+    <div id='container_id'>
+      <p id='text_id'>Click me!</p>
+    </div>
+
+    <script src="packages/chrome/bootstrap.js" defer></script>
+
+    <script src="test_polymer_paper_elements_chrome_app.dart" type="application/dart"></script>    
+  </body>
+</html>
